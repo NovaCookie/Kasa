@@ -1,0 +1,46 @@
+.Banner_pt,
+.banner {
+    border-radius: 25px;
+}
+
+.Banner_pt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.banner {
+    height: 223px;
+    object-fit: fill;
+    background-color: #F6F6F6;
+    opacity: 70%;
+}
+
+.text {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 68px;
+    color: white;
+    width: auto;
+    margin: auto;
+    left: 25%;
+    right: 25%;
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 24px;
+        Line-height: 24px;
+        width: 217px;
+        left: 0;
+    }
+}
+@media (min-width:780px) and (max-width: 1024px) {
+    .text{
+        width: max-content;
+        left: 0;
+        margin: 0px 20%;
+    }
+}

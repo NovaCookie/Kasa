@@ -1,0 +1,46 @@
+.Tags_pt {
+    width: auto;
+}
+
+.ul_Tags {
+    margin: 4% 0;
+    padding: 0;
+
+    li {
+        background-color: #FF6060;
+        color: white;
+        min-width: 115px;
+        width: auto;
+        min-height: 25px;
+        height: fit-content;
+        border-radius: 10px;
+        display: inline-flex;
+        text-decoration: none;
+        margin: auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19.96px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2% 0 0;
+        padding: 3px 6px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .Tags_pt {
+        width: 100%;
+    }
+
+    .ul_Tags {
+        li {
+            min-width: 84px;
+            font-size: 10px;
+            line-height: 14.26px;
+            height: 18px;
+        }
+
+    }
+}

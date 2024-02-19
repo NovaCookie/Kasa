@@ -1,0 +1,10 @@
+body{
+    font-family: 'Montserrat';
+    padding: 1%;
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 4%;  
+    }
+}

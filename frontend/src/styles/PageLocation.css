@@ -1,0 +1,98 @@
+.Collapses_PageLocation_pt {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .Collapses_pt {
+        width: 582px;
+        margin-bottom: 3%;
+
+    }
+}
+
+.block {
+    /* border: solid; */
+    margin: 3%;
+}
+
+@media (max-width: 768px) {
+    .PageLocation_pt {
+        min-width: 335px;
+
+        .Slideshow_pt {
+            min-height: 255px;
+
+            .arrow {
+                img {
+                    height: 24px;
+                }
+            }
+        }
+
+        .Collapses_PageLocation_pt {
+
+            flex-direction: column;
+
+            .Collapses_pt {
+                width: auto;
+                margin-bottom: 10%;
+
+                .collapse_header {
+                    height: 29.93px;
+
+                    h2 {
+                        min-width: 77px;
+                        width: auto;
+                        height: 19px;
+                        font-size: 13px;
+                        line-height: 18.54px;
+                        display: flex;
+                    }
+
+                    .icon {
+                        width: 18.42px;
+                        height: 18.42px;
+
+                        img {
+                            height: 9.14px;
+                            min-width: 16px;
+                            width: auto;
+                        }
+                    }
+                }
+
+                .wrapper {
+                    .inner {
+                        min-width: 335px;
+
+                        /* width: auto; */
+                        .information {
+                            min-width: 316.58px;
+                            /* width: auto; */
+                            min-height: 119px;
+                            height: auto;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 17.11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .block {
+        /* border: solid; */
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) and (min-width:769px) {
+    .Collapses_PageLocation_pt {
+        min-height: 323px;
+        .information{
+            height: 190px;
+        }
+    }
+}
