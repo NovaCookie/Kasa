@@ -37,13 +37,13 @@ function Slideshow({ pictures }) {
     return (
         <>
             <div className='Slideshow_pt'>
-                <img className="banner-img" id="Img" src={src} alt=''></img>
+                <img className="banner-img" id="Img" src={src} alt='image'  data-testid="imgSlideshow" ></img>
                 {pictures.length > 1 ? (
                     <>
-                        <div className="arrow_left arrow " onClick={() => handleCount("left")}>
+                        <div className="arrow_left arrow " data-testid="divArrowLeft"  onClick={() => handleCount("left")}>
                             <img src={arrow_left} alt=''></img>
                         </div>
-                        <div className="arrow_right arrow " onClick={() => handleCount("right")}>
+                        <div className="arrow_right arrow " data-testid="divArrowRight" onClick={() => handleCount("right")}>
                             <img src={arrow_right} alt=''></img>
                         </div>
                         <div className='compteur'>{count+1}/{pictures.length}</div>

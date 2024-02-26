@@ -10,13 +10,13 @@ function Collapse({ titre, information }) {
 
     return (
         <div className='Collapses_pt'>
-            <div className='collapse_header' onClick={() => setIsOpen(!isOpen)}>
+            <div className='collapse_header' data-testid="divHeader" onClick={() => {setIsOpen(!isOpen)}}>
                 <h2>{titre}</h2>
                 <div className='icon'>
                     <img src={(isOpen ? arrow_up : arrow_down)} alt='toggle' ></img>
                 </div>
             </div>
-            <div className={`wrapper ${isOpen ? "open" : ""}`}>
+            <div className={`wrapper ${isOpen ? "open" : ""}`} data-testid="divWrapper">
                 {typeof information === 'string' ? (
                     // Si la description est un string, on affiche un paragraphe
                 <div className='inner'>
